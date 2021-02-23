@@ -54,6 +54,6 @@ num1:			.word	21
 num2:		    .word	44
 num3:			.word	0x1ABCF41D
 real1:			.float  7.241
-alumno:			.asciiz "nombre apellido1 apellido2, alu123456789@ull.edu.es, DNI\n"
+alumno:			.asciiz "Raimon Mejías Hernández, alu0101390161@ull.edu.es, 51779774N\n"
 titulo:			.asciiz "PRINCIPIO DE COMPUTADORES. Practica 1.\n"
 
