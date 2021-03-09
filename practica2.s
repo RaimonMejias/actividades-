@@ -86,6 +86,30 @@ main:
 
 	
 	# las siguientes instrucciones  imprimen la cadena de fin y finalizan el programa
+.data
+	
+.text
+	j bucle
+	bucle:
+	li $v0,4
+	la $a0,titulo
+	syscall
+	la $a0,msgnumero
+	syscall
+	li $v0,5
+	syscall
+	move $t2,$v0
+	beqz $t2,fin_bucle
+	
+	for:
+	   li $t3,0
+	   li $t4,32
+	   blt $4,$t3,fin_for
+	   add $3,1
+	   b for
+	fin_for:
+	
+	fin_bucle:
 	li $v0,4
 	la $a0,msgfin
 	syscall
